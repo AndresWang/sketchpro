@@ -1,0 +1,194 @@
+{
+    "name" : "Sketch Pro",
+    "identifier" : "com.andreswang.sketchPro",
+    "appcast" : "https://dl.dropboxusercontent.com/s/wzh02ztf5fhoux5/sketchpro.xml",
+    "version" : "3.9.6",
+    "description" : "Great tools to optimize design efficiency in Sketch",
+    "authorEmail" : "gibson90730047@icloud.com",
+    "author" : "Andres Wang",
+    "commands" : [
+                  {
+                  "script" : "symbol_sharedStyle.js",
+                  "handler" : "consistency",
+                  "shortcut" : "control cmd ↑",
+                  "name" : "Consistency",
+                  "identifier" : "consistency"
+                  },
+                  {
+                  "script" : "symbol_sharedStyle.js",
+                  "handler" : "startFindInstance",
+                  "shortcut" : "control cmd ↓",
+                  "name" : "Start",
+                  "identifier" : "startFindInstance"
+                  },
+                  {
+                  "script" : "symbol_sharedStyle.js",
+                  "handler" : "previousArtboard",
+                  "shortcut" : "control cmd ←",
+                  "name" : "Previous Artboard",
+                  "identifier" : "previousArtboard"
+                  },
+                  {
+                  "script" : "symbol_sharedStyle.js",
+                  "handler" : "nextArtboard",
+                  "shortcut" : "control cmd →",
+                  "name" : "Next Artboard",
+                  "identifier" : "nextArtboard"
+                  },
+                  {
+                  "script" : "symbol_sharedStyle.js",
+                  "handler" : "instanceInArtboardByJson",
+                  "shortcut" : "control cmd z",
+                  "name" : "Instance in Artboard",
+                  "identifier" : "instanceInArtboard"
+                  },
+                  {
+                  "script" : "symbol_sharedStyle.js",
+                  "handler" : "findGuidelineColorFont",
+                  "shortcut" : "control cmd g",
+                  "name" : "Find Guideline Color/Font",
+                  "identifier" : "findGuidelineColorFont"
+                  },
+                  {
+                  "script" : "space.js",
+                  "handler" : "spaceHorizontally",
+                  "shortcut" : "control option cmd h",
+                  "name" : "Horizontally",
+                  "identifier" : "spaceHorizontally"
+                  },
+                  {
+                  "script" : "space.js",
+                  "handler" : "spaceVertically",
+                  "shortcut" : "control option cmd v",
+                  "name" : "Vertically",
+                  "identifier" : "spaceVertically"
+                  },
+                  {
+                  "script" : "name.js",
+                  "handler" : "rename",
+                  "shortcut" : "control cmd r",
+                  "name" : "Rename",
+                  "identifier" : "rename"
+                  },
+                  {
+                  "script" : "name.js",
+                  "handler" : "findReplace",
+                  "shortcut" : "control option cmd r",
+                  "name" : "Replace Text",
+                  "identifier" : "findReplace"
+                  },
+                  {
+                  "script" : "artboard.js",
+                  "handler" : "newArtboard",
+                  "shortcut" : "control cmd a",
+                  "name" : "New Artboard",
+                  "identifier" : "newArtboard"
+                  },
+                  {
+                  "script" : "artboard.js",
+                  "handler" : "removeArtboards",
+                  "shortcut" : "",
+                  "name" : "Remove Artboards",
+                  "identifier" : "removeArtboards"
+                  },
+                  {
+                  "script" : "artboard.js",
+                  "handler" : "convertToElement",
+                  "shortcut" : "",
+                  "name" : "Convert to Element",
+                  "identifier" : "convertToElement"
+                  },
+                  {
+                  "script" : "lock_unlock.js",
+                  "handler" : "lock",
+                  "shortcut" : "control cmd l",
+                  "name" : "Lock",
+                  "identifier" : "lock"
+                  },
+                  {
+                  "script" : "lock_unlock.js",
+                  "handler" : "unlock",
+                  "shortcut" : "control cmd u",
+                  "name" : "Unlock",
+                  "identifier" : "unlock"
+                  },
+                  {
+                  "script" : "utilities.js",
+                  "handler" : "framerize",
+                  "shortcut" : "control cmd 8",
+                  "name" : "Framerize",
+                  "identifier" : "framerize"
+                  },
+                  {
+                  "script" : "utilities.js",
+                  "handler" : "refreshMirror",
+                  "shortcut" : "control cmd s",
+                  "name" : "Refresh Mirror",
+                  "identifier" : "refreshMirror"
+                  },
+                  {
+                  "script" : "utilities.js",
+                  "handler" : "sortLayerList",
+                  "shortcut" : "control option cmd s",
+                  "name" : "Sort Layer List",
+                  "identifier" : "sortLayerList"
+                  }
+                  ],
+    "menu": {
+        "items": [
+                  {
+                  "title": "Symbol & Shared Style",
+                  "items": [
+                            "consistency",
+                            "findGuidelineColorFont",
+                            {
+                            "title": "Find Instance",
+                            "items": [
+                                      "startFindInstance",
+                                      "previousArtboard",
+                                      "nextArtboard",
+                                      "instanceInArtboard"
+                                      ]
+                            }
+                            ]
+                  },
+                  {
+                  "title": "Space",
+                  "items": [
+                            "spaceHorizontally",
+                            "spaceVertically"
+                            ]
+                  },
+                  {
+                  "title": "Name",
+                  "items": [
+                            "rename",
+                            "findReplace"
+                            ]
+                  },
+                  {
+                  "title": "Artboard",
+                  "items": [
+                            "newArtboard",
+                            "removeArtboards",
+                            "convertToElement"
+                            ]
+                  },
+                  {
+                  "title": "Lock/Unlock",
+                  "items": [
+                            "lock",
+                            "unlock"
+                            ]
+                  },
+                  {
+                  "title": "Utilities",
+                  "items": [
+                            "framerize",
+                            "refreshMirror",
+                            "sortLayerList"
+                            ]
+                  }
+                  ]
+    }
+}
